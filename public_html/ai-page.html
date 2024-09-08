@@ -4,47 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Role of AI in Financial Markets</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to your main stylesheet -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+    <link id="mainStyleSheet" rel="stylesheet" href="styles.css"> <!-- Main stylesheet link -->
+    <link id="newStyleSheet" rel="stylesheet" href="new-styles.css" disabled> <!-- New stylesheet link -->
+    <script>
+        function toggleStyleSheet() {
+            var mainStyle = document.getElementById('mainStyleSheet');
+            var newStyle = document.getElementById('newStyleSheet');
+            if (newStyle.disabled) {
+                newStyle.disabled = false;
+                mainStyle.disabled = true;
+            } else {
+                newStyle.disabled = true;
+                mainStyle.disabled = false;
+            }
         }
-        h1 {
-            color: #1e90ff;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-        .prompt-box {
-            background-color: #e8f4f8;
-            border-left: 5px solid #86c1ff;
-            padding: 10px 20px;
-            margin: 20px 0;
-            font-family: "Courier New", Courier, monospace;
-            color: #333;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 50px;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <header>
         <h1>The Role of AI in Financial Markets</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="portfolio.html">Technical Portfolio</a></li>
+                <li><a href="ai-page.html" class="active">AI Page</a></li>
+            </ul>
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+        </nav>
     </header>
+    
     <main>
-        <p>Artificial Intelligence (AI) is rapidly transforming the financial industry, particularly in the realms of investment strategies, risk management, and decision-making processes. AI's ability to process vast amounts of data at high speeds allows for more accurate predictions and efficient operations, making it an invaluable tool in modern finance.</p>
-        <p>One of the most significant applications of AI in finance is in algorithmic trading. AI-driven algorithms can analyze market data, identify patterns, and execute trades faster than any human, leading to better returns. Portfolio management also benefits from AI, as machine learning models can optimize asset allocations and predict market movements with higher precision.</p>
-        <p>In addition to trading and portfolio management, AI is playing a crucial role in risk management and fraud detection. By analyzing historical data and identifying anomalies, AI systems can predict potential risks and prevent fraudulent activities before they occur, thereby safeguarding financial institutions and their clients.</p>
-        <p>Looking ahead, the integration of AI in financial markets will continue to grow, bringing with it both opportunities and challenges. As AI becomes more sophisticated, it will further revolutionize finance, but issues such as data privacy, ethical considerations, and the need for regulatory frameworks will also need to be addressed.</p>
+        <section>
+            <h2>Introduction</h2>
+            <p>Artificial Intelligence (AI) is rapidly transforming the financial industry, particularly in the realms of investment strategies, risk management, and decision-making processes. AI's ability to process vast amounts of data at high speeds allows for more accurate predictions and efficient operations, making it an invaluable tool in modern finance.</p>
+        </section>
+
+        <section>
+            <h2>Algorithmic Trading</h2>
+            <p>One of the most significant applications of AI in finance is in algorithmic trading. AI-driven algorithms can analyze market data, identify patterns, and execute trades faster than any human, leading to better returns. For more information on algorithmic trading, visit <a href="https://www.investopedia.com/terms/a/algorithmictrading.asp" target="_blank">Investopedia's guide</a>.</p>
+        </section>
+
+        <section>
+            <h2>Portfolio Management</h2>
+            <p>Portfolio management also benefits from AI, as machine learning models can optimize asset allocations and predict market movements with higher precision. Learn more about AI in portfolio management at <a href="https://www.forbes.com/councils/forbestechcouncil/2024/01/16/strategic-portfolio-management-20-steps-toward-an-ai-powered-transformation/" target="_blank">Forbes</a>.</p>
+        </section>
+
+        <section>
+            <h2>Risk Management and Fraud Detection</h2>
+            <p>In today's rapidly evolving technological landscape, maintaining compliance with regulatory standards while leveraging AI can significantly impact a company's competitive edge. Discover more about AI in risk management at <a href="https://www.accenture.com/us-en/insights/artificial-intelligence/ai-compliance-competitive-advantage" target="_blank">Accenture</a>.</p>
+        </section>
+
+        <section>
+            <h2>Future Prospects</h2>
+            <p>Looking ahead, the integration of AI in financial markets will continue to grow, bringing with it both opportunities and challenges. As AI becomes more sophisticated, it will further revolutionize finance, but issues such as data privacy, ethical considerations, and the need for regulatory frameworks will also need to be addressed.</p>
+        </section>
+        
     </main>
     <section class="prompt-box">
         <h2>Prompt Used</h2>
@@ -53,5 +69,6 @@
     <footer>
         <p>&copy; 2024 Anzal Khan</p>
     </footer>
+    <script src="functions.js"></script>
 </body>
 </html>

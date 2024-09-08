@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Service</title>
-    <link rel="stylesheet" href="styles.css">
+    <link id="mainStyleSheet" rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,10 +13,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="service.html">Service</a></li>
+                <li><a href="service.html" class="active">Service</a></li>
                 <li><a href="portfolio.html">Technical Portfolio</a></li>
                 <li><a href="ai-page.html">AI Page</a></li>
             </ul>
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
         </nav>
     </header>
     <main>
@@ -24,53 +25,45 @@
             <!-- Community Involvement Section -->
             <section id="community-involvement">
                 <h2>Community Involvement</h2>
-                
                 <ul>
                     <li>
                         <h3>Mosque Clean-Up</h3>
                         <p>The Islamic Center of Bryan College Station is the only mosque near campus. I participated in a clean-up event near the start of Fall semester
-                            to help create a more welcoming environment to new Muslim Aggies.
+                            to help create a more welcoming environment for new Muslim Aggies. The pictures below are me derusting a bike rack and a group picture of everyone involved.
+                            The post and the TAMU MSA Instagram is at <a href="https://www.instagram.com/p/Cj6HIWjOeIP/?hl=en&img_index=1" target="_blank">TAMU MSA</a>.
                         </p>
                     </li>
-                    <!-- <li>
-                        <h3></h3>
-                        <p>Description of Project B including your role, goals, and outcomes.</p>
-                    </li> -->
-                    <!-- Add more projects or service activities as needed -->
                 </ul>
+                
             </section>
 
             <!-- Volunteer Experience Section -->
             <section id="volunteer-experience">
                 <h2>Volunteer Experience</h2>
-                
                 <ul>
                     <li>
                         <h3>Mamie George Catholic Charities Rosenberg - Food Distribution</h3>
-                        <p> Volunteered over 20 hours at a food distribution center during the COVID-19 pandemic to help hundreds of families receive necessary groceries.
+                        <p>Volunteered over 20 hours at a food distribution center during the COVID-19 pandemic to help hundreds of families receive necessary groceries.
+                            More about this organization at <a href="https://catholiccharities.org/mgcc/" target="_blank">Mamie George Catholic Charities</a>.</p>
                         </p>
                     </li>
-                    <!-- <li>Another Volunteer Role - Description of duties and impact.</li> -->
-                    <!-- Add more volunteer roles or experiences -->
                 </ul>
             </section>
 
-            <!-- Testimonials Section (Optional) -->
-            <!-- <section id="testimonials">
-                <h2>Testimonials</h2>
-                <div class="testimonial">
-                    <p>"[Your Name] has made a significant impact through their volunteer efforts. Their dedication and passion are truly inspiring."</p>
-                    <p>- Community Leader</p>
+            <!-- Image Gallery Section -->
+            <section id="community-involvement">
+                <h2>Mosque Clean-Up</h2>
+                <div class="gallery">
+                    <img src="pictures/masjid_cleanup.png" alt="Mosque Clean-Up">
+                    <img src="pictures/group_pic.png" alt="Group Pic" class="wide-image">
+                    <!-- Add more images as needed -->
                 </div>
-                <div class="testimonial">
-                    <p>"Working with [Your Name] on various community projects has been a pleasure. They bring great energy and commitment to every task."</p>
-                    <p>- Fellow Volunteer</p>
-                </div>
-            </section> -->
+            </section>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Anzal Khan</p>
     </footer>
+    <script src="functions.js"></script>
 </body>
 </html>

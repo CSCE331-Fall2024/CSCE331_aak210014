@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qualifications</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Qualifications</title>
+    <!-- Add an ID to the stylesheet link -->
+    <link id="mainStyleSheet" rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,13 +13,15 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="qualifications.html" class="active">Qualifications</a></li>
                 <li><a href="service.html">Service</a></li>
                 <li><a href="portfolio.html">Technical Portfolio</a></li>
                 <li><a href="ai-page.html">AI Page</a></li>
             </ul>
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
         </nav>
     </header>
+   
     <main>
         <div class="container">
             <!-- Resume Section -->
@@ -35,14 +38,60 @@
                     <li>Programming Languages: Python, Java, C++, C, R</li>
                     <li>Web Technologies: HTML, CSS, JavaScript</li>
                     <li>Tools: Git, Firebase, React</li>
-                    <li>Databases: MySQL</li>
                     <!-- Add more skills as needed -->
                 </ul>
+                <h2>Interests</h2>
+                <p class="highlighted-interest">
+                    I have a profound interest in Artificial Intelligence (AI) and Machine Learning (ML), and I am eager to expand my knowledge in software engineering and data science. My passion lies in integrating AI into practical applications that address real-world challenges and enhance everyday experiences. This enthusiasm drives me to explore innovative solutions and contribute to advancements in the field.
+
+                    My time at AKW Ventures showed me how to make existing generative AI into a product. The basic gist of the product was a Software as a Service (SaaS) project where AI would take a transcript of a client's meeting and draft a follow-up email for the other party. I learned a lot about automation and databases, especially Microsoft Azure.
+
+                    In addition to my focus on AI and ML, I bring a solid foundation in hardware through my experience at GTT Services. There, I provided clients with essential support for routine computer repairs, including handling issues like water damage and memory recovery. This role also involved more complex tasks, such as server maintenance for small business clients. These responsibilities honed my skills in troubleshooting and managing hardware-related issues.
+
+                    Moreover, my involvement in various projects has significantly shaped my understanding of different aspects of a software team. I have gained valuable experience working on the back-end and API development of diverse projects. This experience has broadened my perspective and deepened my knowledge of how different components of a software system interact and function together. I am committed to continuing my growth in these areas, with the goal of leveraging my skills to drive meaningful technological advancements.
+                    
+                    At any rate, I am still learning a lot in my classes and through clubs, so my interests in the technology field are bound to change, but as of right now, I am trying to make myself ready to work in the industry by studying different development methodologies, common tools like Git, and working on more and more things to make myself more hireable.
+
+
+</p>
             </section>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Anzal Khan</p>
     </footer>
+
+    <!-- <script>
+        function toggleStyleSheet() {
+            // Get the current stylesheet element
+            var currelement = document.getElementById("mainStyleSheet");
+
+            // Check the current stylesheet file name
+            var currstyle = currelement.getAttribute("href");
+
+            // Determine the new stylesheet file name
+            var newstyle = currstyle === "styles.css" ? "new-styles.css" : "styles.css";
+
+            // Replace stylesheet with new stylesheet
+            currelement.setAttribute("href", newstyle);
+
+            // Save the new stylesheet name to localStorage for persistence
+            localStorage.setItem("stylesheet", newstyle);
+        }
+
+        window.onload = function() {
+            // Get the saved stylesheet name from localStorage
+            var savedstyle = localStorage.getItem("stylesheet");
+
+            // Get the HTML style element by ID
+            var elem = document.getElementById("mainStyleSheet");
+
+            // Replace href attribute of HTML element if saved style exists
+            if (savedstyle) {
+                elem.setAttribute("href", savedstyle);
+            }
+        };
+    </script> -->
+    <script src="functions.js"></script>
 </body>
 </html>

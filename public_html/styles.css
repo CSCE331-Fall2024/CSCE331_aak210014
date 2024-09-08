@@ -5,41 +5,23 @@
     box-sizing: border-box;
 }
 
-.project img {
-    width: 250px; /* Increased width */
-    height: 250px; /* Increased height */
-    margin-right: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
-    background-color: #717171; /* Light gray background color */
-    padding: 10px; /* Padding around the image inside the container */
+/* Button Styles */
+button {
+    background-color: #86c1ff;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Adjust width if needed */
+    text-align: center;
+    font-size: 1em; /* Adjust font size */
+    display: inline-block; /* Ensure it is treated as inline-block */
 }
-
-/* Heading Style for Portfolio Page */
-#projects h2 {
-    font-size: 2em;
-    color: #86c1ff; /* Light blue color */
-    border-bottom: 2px solid #86c1ff; /* Underline effect with light blue */
-    padding-bottom: 10px;
-    margin-bottom: 40px; /* Additional space below the heading */
-}
-
-#projects h3 {
-    font-size: 1.5em;
-    color: #86c1ff; /* Light blue color */
-    /* border-bottom: 2px solid #86c1ff; /* Underline effect with light blue 
-    padding-bottom: 10px;
-    margin-bottom: 40px; Additional space below the heading */
-}
-
-.project img:hover {
-    background-color: #e0e0e0; /* Slightly darker on hover */
-}
-
 
 /* Styling the body */
 body {
-    font-family: Calibri, sans-serif;
+    font-family: 'Calibri', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -59,13 +41,22 @@ header h1 {
     margin: 0;
 }
 
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center; /* Center all items in the nav */
+    background-color: #333;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    align-items: center; /* Center items vertically */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -105,10 +96,9 @@ nav ul li a {
 }
 
 #quick-links .button img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
     display: block;
-    /* transition: opacity 0.3s ease; */
     background-color: transparent;
 }
 
@@ -127,10 +117,43 @@ nav ul li a {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+#image-gallery {
+    margin: 20px;
+    background-color: #333; /* Dark background for section */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#image-gallery h2 {
+    font-size: 2em;
+    color: #86c1ff; /* Light blue color */
+    border-bottom: 2px solid #86c1ff; /* Underline effect with light blue */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center images horizontally */
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px; /* Set maximum width */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
+}
+
+.gallery .wide-image {
+    max-width: 700px;
+}
 
 /* Profile Picture */
 .profile-pic {
-    width: 150px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
 }
@@ -139,7 +162,7 @@ nav ul li a {
 body {
     font-family: Calibri, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Lighter background for better contrast */
+    background-color: #f0f0f0; 
     color: #333;
 }
 
@@ -157,10 +180,11 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    align-items: center; /* Center items vertically */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -174,9 +198,9 @@ nav ul li a {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff; /* White background for sections */
+    background-color: #ffffff; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for emphasis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     margin-bottom: 60px;
 }
 
@@ -186,14 +210,14 @@ nav ul li a {
 }
 
 #resume h2 {
-    font-size: 2em; /* Larger heading for prominence */
-    color: #86c1ff; /* Bright blue color */
-    border-bottom: 2px solid #86c1ff; /* Underline effect */
+    font-size: 2em;
+    color: #86c1ff; 
+    border-bottom: 2px solid #86c1ff;
     padding-bottom: 10px;
 }
 
 #resume p {
-    font-size: 1.2em; /* Increase font size for readability */
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
@@ -201,41 +225,7 @@ nav ul li a {
     width: 100%;
     height: 600px;
     border: none;
-    border-radius: 8px; /* Rounded corners for iframe */
-}
-
-/* Skills Section */
-#skills {
-    margin-top: 20px;
-}
-
-#skills h2 {
-    font-size: 2em; /* Larger heading for prominence */
-    color: #86c1ff; /* Bright blue color */
-    border-bottom: 2px solid #86c1ff; /* Underline effect */
-    padding-bottom: 10px;
-}
-
-#skills ul {
-    list-style-type: disc;
-    margin: 20px 0;
-    padding-left: 20px;
-    font-size: 1.2em; /* Increase font size for readability */
-}
-
-#skills li {
-    margin-bottom: 40px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: rgb(148, 148, 148);
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border-radius: 8px;
 }
 
 
@@ -261,12 +251,72 @@ footer {
     width: 150px;
     height: 150px;
     margin-right: 20px;
+    border-radius: 8px;
+    background-color: #717171; /* Light gray background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for images */
 }
 
 .project a {
     color: #333;
     text-decoration: underline;
 }
+
+/* Prompt Box Style */
+.prompt-box {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #86c1ff; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px 0; /* Margin around the box */
+    font-family: "Courier New", Courier, monospace; /* Monospace font for prompt text */
+    color: #333; /* Dark text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.prompt-box h2 {
+    font-size: 1.5em; /* Slightly larger heading */
+    color: #333; /* Dark text color for heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.prompt-box p {
+    font-size: 1em; /* Normal font size for text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+
+
+/* Skills Section */
+#skills {
+    margin-top: 20px;
+}
+
+#skills h2 {
+    font-size: 2em; 
+    color: #86c1ff; 
+    border-bottom: 2px solid #86c1ff; 
+    padding-bottom: 10px;
+}
+
+#skills ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 1.2em; 
+}
+
+#skills li {
+    margin-bottom: 40px;
+}
+
+/* Interests Section */
+#skills p.highlighted-interest {
+    font-size: 1.2em; /* Larger font size */
+    margin-bottom: 60px; /* Bigger margin from the bottom of the screen */
+    color: #333; /* Text color to match the overall theme */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
